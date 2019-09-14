@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de javascript</title>
+    <script type="text/javascript">
+        //funcion para aumentar la fuente
+        document.getElementById("aumenta").addEventListener("click", aumentar_tam, false);
+        document.getElementById("disminuye").addEventListener("click", aumentar_tam, false);
+
+        var valor = 16;
+
+        function aumentar_tam() {
+            alert("prueba");
+            valor++;
+            document.getElementById("parrafo1").style.fontSize = valor + "px";
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <p id="parrafo1">Fuente Original</p>
+    <input type="button" value="Aumentar" id="aumenta">
+    <input type="button" value="Disminuir" id="disminuye">
+
+
+
+</body>
+
+</html>
